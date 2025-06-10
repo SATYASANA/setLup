@@ -105,13 +105,13 @@ import RefundPolicy from "./components/RefundPolicy";
 
 
 import AnimationHero from "./AnimationHero";
-import PrivacyNew from "./components/PrivacyNew";
+
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={
         <div>
-          {/* Your original App layout */}
+          
           <Navbar />
           {/* <HeroSection /> */}
           <AnimationHero/>
@@ -129,7 +129,7 @@ const App = () => {
           <Footer />
         </div>
       } />
-      <Route path="/privacy" element={<PrivacyNew/>} /> {/* :white_check_mark: Route added */}
+   
        <Route path="/RefundPolicy" element={<RefundPolicy />} />
     </Routes>
   );
