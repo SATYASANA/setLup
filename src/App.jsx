@@ -87,7 +87,7 @@ import React from "react";
 import { useState } from 'react'
 import Navbar from './components/Navbar'; // Ensure correct path
 import './index.css';
-import HeroSection from "./components/HeroSection";
+
 import Features from "./components/Features";
 import Community from "./components/Community";
 // import BrandingPartners from "./components/Branding";
@@ -102,9 +102,10 @@ import ScaleBrands from "./components/ScaleBrands";
 import { Routes, Route } from "react-router-dom";
 // import TermsAndConditions from "./components/TermsAndConditions"; 
 import RefundPolicy from "./components/RefundPolicy";
-import Privacy from "./components/Privacy";
+
 
 import AnimationHero from "./AnimationHero";
+import PrivacyNew from "./components/PrivacyNew";
 const App = () => {
   return (
     <Routes>
@@ -128,7 +129,7 @@ const App = () => {
           <Footer />
         </div>
       } />
-      <Route path="/privacy" element={<Privacy />} /> {/* :white_check_mark: Route added */}
+      <Route path="/privacy" element={<PrivacyNew/>} /> {/* :white_check_mark: Route added */}
        <Route path="/RefundPolicy" element={<RefundPolicy />} />
     </Routes>
   );
